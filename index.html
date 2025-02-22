@@ -28,11 +28,7 @@
             <option>November</option>
             <option>December</option>
         </select>
-
-        <!-- Search Box -->
         <input type="text" id="searchBox" placeholder="🔍 Search transactions..." />
-
-        <!-- Transactions Table -->
         <table>
             <thead>
                 <tr>
@@ -42,24 +38,18 @@
                 </tr>
             </thead>
             <tbody id="transactionsTable">
-                <!-- Transactions will be dynamically inserted here -->
             </tbody>
         </table>
-
-        <!-- Pagination -->
         <div class="pagination">
             <button id="prevPage">⬅️ Previous</button>
             <span id="pageNumber">Page 1</span>
             <button id="nextPage">Next ➡️</button>
         </div>
-
-        <!-- Live Bar Chart -->
         <div class="chart-container">
             <h2>💰 Transactions Price Range</h2>
             <canvas id="barChart"></canvas>
         </div>
     </div>
-
     <script>
         let transactions = [];
         let filteredTransactions = [];
@@ -101,7 +91,7 @@
             }
 
             document.getElementById("pageNumber").innerText = `Page ${page}`;
-            renderChart(); // Update the chart when transactions change
+            renderChart(); 
         }
 
         function renderChart() {
@@ -117,7 +107,7 @@
             });
 
             if (barChartInstance) {
-                barChartInstance.destroy(); // Remove previous chart instance
+                barChartInstance.destroy();
             }
 
             const ctx = document.getElementById("barChart").getContext("2d");
@@ -169,7 +159,7 @@
 
         document.getElementById("monthSelector").addEventListener("change", generateFakeTransactions);
 
-        generateFakeTransactions(); // Initial load
+        generateFakeTransactions();
     </script>
 
 </body>
