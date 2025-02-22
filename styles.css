@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select, input[type="text"] {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.pagination {
+    margin-top: 15px;
+}
+
+.pagination button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.chart-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
